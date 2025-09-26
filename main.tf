@@ -55,7 +55,7 @@ data "aws_subnets" "default_subnets" {
 # EKS Cluster Definition
 #############################################
 resource "aws_eks_cluster" "mycluster" {
-  name     = "mycluster"
+  name     = "mycluster1"
   role_arn = aws_iam_role.cluster_role.arn
   # version = "1.31"   # Optional: specify EKS version
 
